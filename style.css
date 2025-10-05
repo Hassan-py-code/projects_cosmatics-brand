@@ -1,0 +1,380 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&display=swap');
+
+:root{
+     --color-1:#D5BBAE;
+     --color-2:#FDD5F0;
+     --color-3:#CF1F4D;
+     --black:#000;
+     --white:#ffffff;
+     --cards:#E8D7C6;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins" , sans-serif;
+     color: var(--white);
+     text-decoration: none;
+}
+
+body{
+     background: #061525;
+}
+
+/*-------- HEADER DESIGN----------- */
+header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: var(--color-1);
+     padding: 15px;
+     position: fixed;
+     width: 100%;
+     top:0;
+     z-index: 999;
+}
+
+header .logo{
+     color: var(--black);
+     font-weight: bold;
+     font-size: 27px;
+     margin-left: 10px;
+     font-family: 'Kaushan Script', cursive;
+}
+
+/* ---------Nav design LINKS---------- */
+header nav a{
+     margin: 20px;
+     color: var(--black);
+     font-weight: 500;
+     font-size: 16px;
+}
+
+/* --------Design each section---------- */
+
+/* section number 1 design images */
+section .home-image{
+     width: 100%;
+     margin-top: 30px;
+}
+
+
+/* section number 2 design title in home page */
+section .home-title{
+     display: flex;
+     align-self: center;
+     justify-content: center;
+}
+
+section .home-title .title-brand{
+     max-width: 600px;
+}
+
+section .home-title h1{
+      margin-top: 40px;
+      text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2.6rem;
+}
+
+section .home-title p{
+     margin-top: 9px;
+      text-align: center;
+}
+
+section .home-title .title-brand .btn{
+     text-align: center;
+}
+
+section .home-title .title-brand .btn button{
+     margin-top: 18px;
+     color: var(--black);
+     padding: 0.5rem 40px;
+     font-size: 14px;
+     font-weight: 500;
+     background-color: var(--color-2);
+     border: 1px solid var(--white);
+     border-radius: 8px;
+}
+
+
+
+section .home-title .image-in-title{
+     width: 130px;
+    animation: hu__hu__ infinite 2s ease-in-out
+}
+
+
+@keyframes hu__hu__ {
+    50% { transform: translateY(8px) }
+}
+
+/* --------Section 3 design 3 cards--------- */
+
+.cards{
+    margin-top: 13px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+.cards-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    background-color: var(--color-2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cards .cards-child .icon{
+     text-align: center;
+}
+.cards .cards-child .icon i{
+     color: yellow;
+     
+}
+
+.cards .cards-child .icon .title-cards h3{
+     color: var(--black);
+     font-weight: 530;
+}
+
+.cards .cards-child .icon .title-cards h4{
+     color: var(--black);
+     font-weight: 450;
+}
+
+
+.cards .cards-child .icon .btn-cards button{
+      color: var(--white);
+      padding:0.5rem 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      border: 1px solid var(--white);
+      background-color: var(--color-3);
+}
+
+.cards .cards-child .image-cards{
+     width: 23vh;
+     margin-left: 10px;
+     border-radius: 5px;
+
+}
+
+
+
+/* section number 4  about cosmetics*/
+.About-cosmetics{
+     margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--cards);
+    padding: 1.9rem;
+}
+
+.About-cosmetics .title-about{
+      max-width: 600px;
+      margin-left: 40px;
+}
+
+.About-cosmetics .title-about h1{
+      color: var(--black);
+      font-size: 2.7em;
+        font-family: 'Kaushan Script', cursive;
+}
+.About-cosmetics .title-about p{
+      color: var(--black);
+}
+
+.About-cosmetics .btn-about {
+       margin-left: 40px;
+}
+
+.About-cosmetics .btn-about  button{
+      color: var(--black);
+      padding: 0.5rem 30px;
+      font-weight: 60    0;
+      margin-top: 10px;
+      background-color: var(--color-2);
+      border: 1px solid var(--black);
+      border-radius: 5px;
+      font-family: 'Kaushan Script', cursive;
+}
+
+.About-cosmetics .image-about{
+      width: 300px;
+      margin-top: 10px;
+      border: 1px solid  var(--white);
+      border-radius: 50%;
+      animation: border-glow 1.5s infinite alternate;
+      transition: 0.3s ease;
+}
+
+
+
+ @keyframes  border-glow {
+    0%{
+        box-shadow:0 0 10px var(--color-3),0 0 20px var(--color-3);
+    }
+    100%{
+        box-shadow:0 0 30px var(--color-3),0 0 60px var(--color-3) ;
+    }
+ }
+
+
+ .About-cosmetics .image-about:hover{
+      animation: border-glows 1.5s infinite alternate;
+ }
+
+
+  @keyframes  border-glows {
+    0%{
+        box-shadow:0 0 10px #f8265e , 0 0 20px #f8265e;
+    }
+    100%{
+        box-shadow:0 0 30px #f8265e  , 0 0 60px #f8265e;
+    }
+ }
+
+
+/* -------section 4 products links-------------- */
+.products-links{
+     margin-top: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 30px;
+}
+
+.products-links h2{
+      border-bottom: 2px solid var(--color-3);
+      /* font-style: italic; */
+      font-family: 'Kaushan Script', cursive;
+}
+
+.products-links .links a{
+      margin: 20px;
+}
+
+.products-links .links .active{
+      background-color: var(--color-2);
+      padding: 0.3rem 20px;
+      color: var(--black);
+      font-weight: 600;
+}
+
+/* Section 4 */
+
+
+.new-product{
+        margin-top: 5%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1.5rem));
+    gap: 30px;
+    justify-content: center;
+}
+
+.new-product .new-product-child{
+     border: 2px solid var(--white);
+    padding: 2rem 30px;
+    cursor: pointer;
+    border-radius: 10px;  
+    /* padding: 10px;   */
+    text-align: center; 
+     
+     
+}
+
+.new-product .new-product-child img{
+      width: 100%;
+      height: 100%;
+}
+
+.new-product .new-product-child .details-product  h3{
+       margin-top: -13px;
+}
+
+.new-product .new-product-child .price-add{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 5px;
+}
+
+
+.new-product .new-product-child .price-add i{
+     background-color: var(--color-3);
+     border: 2px solid var(--white);
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+/* section 4 */ 
+
+
+.shop_div h1{
+      text-align: center;
+      margin-top: 4rem;
+       font-family: 'Kaushan Script', cursive;
+       font-size: 3rem; 
+}
+
+.shop_{
+     margin-top: 6%;
+      display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1.5rem));
+    gap: 30px;
+    justify-content: center;
+    background-color: var(--color-2);
+    padding: 1rem;
+}
+
+.shop_  .shop_child{
+     text-align: center;
+     margin-top: 9%;
+     border: 2px solid var(--black);
+     padding: 5px;
+}
+
+.shop_ .shop_child p{
+      color: var(--black);
+      font-weight: 600;
+      font-size: 18px;
+}
+
+.shop_ .shop_child button{
+      padding: 0.5rem 30px;
+      color: var(--black);
+      margin-top: 9px;
+      background-color: var(--color-3);
+      border: none;
+      font-weight: 500;
+      border-radius: 8px;
+       font-family: 'Kaushan Script', cursive;
+       color: var(--white);
+}
+
+
+
+.shop_  .shop_child img{
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      cursor: pointer;
+}
+
+.shop_  .shop_child img:hover{
+      transform: scale(1.02);
+}
