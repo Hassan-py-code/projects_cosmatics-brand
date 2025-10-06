@@ -29,12 +29,18 @@ header{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     background-color: var(--color-1);
+     background-color: var(--color-2);
      padding: 15px;
      position: fixed;
      width: 100%;
      top:0;
      z-index: 999;
+     transition: 0.3s ease-in-out;
+}
+
+
+header.shadow{
+       background-color: var(--cards);
 }
 
 header .logo{
@@ -51,6 +57,18 @@ header nav a{
      color: var(--black);
      font-weight: 500;
      font-size: 16px;
+}
+
+/* menu design */
+
+.menu {
+     display: none;
+}
+
+.menu i{
+     font-size: 2rem;
+     color: var(--black);
+     cursor: pointer;
 }
 
 /* --------Design each section---------- */
@@ -128,43 +146,68 @@ section .home-title .image-in-title{
     justify-content: space-between;
     margin: 30px;
     background-color: var(--color-2);
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
+    border: 2px solid var(--white);
+    box-shadow: 0 0 10px var(--white);
 }
 
 .cards .cards-child .icon{
      text-align: center;
 }
 .cards .cards-child .icon i{
-     color: yellow;
+     /* color: yellow; */
+     color: var(--color-3);
+     margin-top: 10px;
+
      
 }
 
 .cards .cards-child .icon .title-cards h3{
      color: var(--black);
      font-weight: 530;
+     margin-top: 20px;
 }
 
 .cards .cards-child .icon .title-cards h4{
      color: var(--black);
      font-weight: 450;
+     margin-top: 10px;
+     font-size: 1.2rem;
+     
 }
 
 
 .cards .cards-child .icon .btn-cards button{
-      color: var(--white);
+      color: var(--black);
       padding:0.5rem 20px;
       margin-top: 15px;
       border-radius: 10px;
-      border: 1px solid var(--white);
-      background-color: var(--color-3);
+      border: 1px solid var(--black);
+       font-family: 'Kaushan Script', cursive;
+       font-weight: 500;
+       background-color: transparent;
+       cursor: pointer;
 }
 
+
+.cards .cards-child .icon .btn-cards button:hover{
+      box-shadow: 0 0 20px var(--white);
+      border: 1px solid var(--color-3);
+}
+
+/* .cards  */
+
 .cards .cards-child .image-cards{
-     width: 23vh;
+     width: 25vh;
      margin-left: 10px;
      border-radius: 5px;
+     transition: 0.3s ease;
+     
+}
 
+.cards .cards-child .image-cards:hover{
+      transform: scale(1.1);
 }
 
 
@@ -176,7 +219,7 @@ section .home-title .image-in-title{
     align-items: center;
     justify-content:center;
     background-color: var(--cards);
-    padding: 1.9rem;
+    padding: 2.2rem;
 }
 
 .About-cosmetics .title-about{
@@ -187,7 +230,10 @@ section .home-title .image-in-title{
 .About-cosmetics .title-about h1{
       color: var(--black);
       font-size: 2.7em;
-        font-family: 'Kaushan Script', cursive;
+      font-family: 'Kaushan Script', cursive;
+      background: linear-gradient(90deg,var(--black) 50%,var(--color-3) 5%);
+      -webkit-background-clip:Text;
+     -webkit-text-fill-color: transparent ;
 }
 .About-cosmetics .title-about p{
       color: var(--black);
@@ -299,13 +345,15 @@ section .home-title .image-in-title{
 
 .new-product .new-product-child .details-product  h3{
        margin-top: -13px;
+       font-weight: 500;
 }
 
 .new-product .new-product-child .price-add{
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin-top: 5px;
+      margin-top: 15px;
+     
 }
 
 
@@ -320,6 +368,9 @@ section .home-title .image-in-title{
      justify-content: center;
 }
 
+.new-product .new-product-child .price-add i:hover{
+      box-shadow: 0 0 10px var(--white);
+}
 
 /* section 4 */ 
 
@@ -332,38 +383,44 @@ section .home-title .image-in-title{
 }
 
 .shop_{
-     margin-top: 6%;
+     margin-top: 1.5%;
       display: grid;
     grid-template-columns:repeat(auto-fill,minmax(300px,1.5rem));
     gap: 30px;
     justify-content: center;
-    background-color: var(--color-2);
     padding: 1rem;
 }
 
 .shop_  .shop_child{
      text-align: center;
      margin-top: 9%;
-     border: 2px solid var(--black);
-     padding: 5px;
+     border: 2px solid var(--white);
+     padding: 13px;
+    border-radius: 10px;
 }
 
 .shop_ .shop_child p{
-      color: var(--black);
-      font-weight: 600;
+      color: var(--white);
+      font-weight: 430;
       font-size: 18px;
 }
 
 .shop_ .shop_child button{
       padding: 0.5rem 30px;
-      color: var(--black);
+      color: var(--white);
       margin-top: 9px;
-      background-color: var(--color-3);
-      border: none;
+      background-color: transparent;
+      border: 1px solid var(--color-2);
       font-weight: 500;
       border-radius: 8px;
        font-family: 'Kaushan Script', cursive;
-       color: var(--white);
+       cursor: pointer;
+       transition: 0.3s ease-in;
+}
+
+.shop_ .shop_child button:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px var(--white);
 }
 
 
@@ -377,4 +434,275 @@ section .home-title .image-in-title{
 
 .shop_  .shop_child img:hover{
       transform: scale(1.02);
+}
+
+
+
+/* section 5 swiper to  */
+
+.client-says h1{
+      margin-top: 3.5%;
+     text-align: center;
+       font-family: 'Kaushan Script', cursive;
+       font-size: 3rem;
+     
+}
+
+.wrapper {
+  max-width: 1100px;
+  padding: 20px 10px;
+  margin: 0 80px 55px;
+  overflow: hidden;
+  
+}
+
+.wrapper .card {
+     margin-top: 3%;
+  background: var(--color-2);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--white);
+  transition: transform 0.3s ease;
+}
+
+.wrapper .card:hover {
+  transform: translateY(-10px);
+}
+
+.card .card-image{
+       text-align: center;
+}
+
+.card .card-image img {
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border:1px solid var(--black);
+
+}
+
+
+.card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+
+.card .card-content .card-title {
+  color: #111111;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+
+.card .card-content .card-text {
+  color: #747474;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+
+.wrapper .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  /* background: #B1B3F8; */
+  background-color: var(--white);
+}
+
+.wrapper .swiper-pagination-bullet-active {
+  background: var(--color-3);
+}
+
+/* Auto-play loading indicator */
+.wrapper .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #6366f1;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: autoplay-loading 5s linear forwards;
+}
+
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+@keyframes autoplay-loading {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next) {
+  color: #6366f1;
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next):hover {
+  color: #8b5cf6;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}
+
+
+/* Section 5 subscibe now */
+
+.subscribe_Now {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 3%;
+}
+
+
+.add-email h1{
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      font-size: 3.2rem;
+}
+
+.add-email input{
+     margin-top: 10px;
+      padding: 1rem 8rem;
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid var(--black);
+}
+
+.add-email .btn-subscribe{
+      text-align: center;
+      margin-top: 20px;
+}
+
+.add-email .btn-subscribe button{
+      padding: 0.6rem 50px;
+      color: var(--black);
+      background-color: var(--color-2);
+      border: 2px solid var(--color-2);
+      font-weight: 500;
+      border-radius: 6px;
+      box-shadow:  0 0 10px var(--white);
+
+}
+
+
+/* Footer End  */
+
+.footer{
+     padding: 5rem;
+     margin-top: 4%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: var(--color-1);
+}
+
+.footer .child-footer .title_footer{
+      max-width: 400px;
+}
+
+.footer .child-footer .title_footer h3{
+      font-family: 'Kaushan Script', cursive;
+      font-size: 1.9rem;
+}
+
+.footer .child-footer .title_footer p{
+   color: var(--black);
+   font-weight: 550;
+   margin-top: 6px;
+}
+
+
+.footer .child-footer .social-icon{
+      margin-top: 20px;
+}
+
+.footer .child-footer .social-icon i{
+      font-size: 1rem;
+      margin: 5px;
+      background-color: var(--color-3);
+      padding: 15px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--black);
+
+}
+
+.footer .child-footer h3{
+      color: var(--black);
+}
+
+.footer .child-footer ul {
+      list-style: none;
+}
+
+.footer .child-footer ul li a {
+    color: var(--black);
+}
+
+
+/* RESPONSIVE WEBSITE */
+
+/* Mobile */
+
+@media screen and (max-width:786px) {
+    
+
+     .navbar{
+          border-top: 2px solid var(--white);
+         position: absolute;
+         top:100%;
+         left: -100%;
+         width: 100%;
+         background-color: var(--color-2);
+         height: 50vh;
+         transition: 0.5s ease-in-out;  
+         overflow: auto;
+         z-index: -1;
+     }
+    .navbar a{
+       display:block;
+       position: relative;
+       top: 35px;
+       font-size: 1.2rem;
+       font-weight: 600;
+    }
+     .menu{
+        display: block;
+     }
+
+     .Acitve-nav.navbar{
+         left: 0;
+          
+     }
+
 }
