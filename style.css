@@ -63,7 +63,9 @@ header nav a{
 
 .menu {
      display: none;
+     position: relative;
 }
+
 
 .menu i{
      font-size: 2rem;
@@ -88,27 +90,33 @@ section .home-title{
 }
 
 section .home-title .title-brand{
-     max-width: 600px;
+     max-width: 550px;
+    
+      /* margin-left: 40px; */
 }
 
 section .home-title h1{
       margin-top: 40px;
-      text-align: center;
         font-family: 'Kaushan Script', cursive;
-        font-size: 2.6rem;
+        text-align: center;
+        font-size: 3.3rem;
 }
 
 section .home-title p{
-     margin-top: 9px;
-      text-align: center;
+
+      position: relative;
+      font-size: 16px;
+      margin: 20px 0 20px;
+      
+      
 }
 
-section .home-title .title-brand .btn{
+
+/* section .home-title .title-brand .btn{
      text-align: center;
-}
+} */
 
 section .home-title .title-brand .btn button{
-     margin-top: 18px;
      color: var(--black);
      padding: 0.5rem 40px;
      font-size: 14px;
@@ -133,7 +141,7 @@ section .home-title .image-in-title{
 /* --------Section 3 design 3 cards--------- */
 
 .cards{
-    margin-top: 13px;
+    margin-top: 50px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -316,8 +324,17 @@ section .home-title .image-in-title{
       font-weight: 600;
 }
 
-/* Section 4 */
+.icon-product {
+     display: none;  
+}
+.icon-product i {
+       font-size: 2rem;
+       color: var(--color-2);
+       cursor: pointer;
+       border: 1px solid var(--white);
+}
 
+/* Section 4 */
 
 .new-product{
         margin-top: 5%;
@@ -430,10 +447,11 @@ section .home-title .image-in-title{
       border-radius: 10px;
       transition: 0.3s ease;
       cursor: pointer;
+      transform: scale(1.02);
 }
 
 .shop_  .shop_child img:hover{
-      transform: scale(1.02);
+      transform: scale(1.03);
 }
 
 
@@ -595,6 +613,8 @@ section .home-title .image-in-title{
       border-radius: 5px;
       outline: none;
       border: 1px solid var(--black);
+      color: var(--black);
+
 }
 
 .add-email .btn-subscribe{
@@ -617,12 +637,17 @@ section .home-title .image-in-title{
 /* Footer End  */
 
 .footer{
-     padding: 5rem;
+     padding: 3rem;
      margin-top: 4%;
       display: flex;
       align-items: center;
       justify-content: space-around;
+     
       background-color: var(--color-1);
+}
+
+.footer .child-footer{
+      padding: 10px;
 }
 
 .footer .child-footer .title_footer{
@@ -654,6 +679,7 @@ section .home-title .image-in-title{
       height: 50px;
       border-radius: 50%;
       border: 2px solid var(--black);
+      box-shadow: 0 0 10px var(--white);
 
 }
 
@@ -669,13 +695,25 @@ section .home-title .image-in-title{
     color: var(--black);
 }
 
+.copy-right{
+       background-color: var(--white);
+       padding: 10px;
+       text-align: center;
+       font-weight: 500;
+}
+
+.copy-right p{
+       color: var(--black);
+       font-size: 1.2rem;
+}
 
 /* RESPONSIVE WEBSITE */
 
 /* Mobile */
 
 @media screen and (max-width:786px) {
-    
+       
+      /* Responsive nav bar */
 
      .navbar{
           border-top: 2px solid var(--white);
@@ -688,6 +726,7 @@ section .home-title .image-in-title{
          transition: 0.5s ease-in-out;  
          overflow: auto;
          z-index: -1;
+
      }
     .navbar a{
        display:block;
@@ -700,9 +739,111 @@ section .home-title .image-in-title{
         display: block;
      }
 
+    
+
      .Acitve-nav.navbar{
          left: 0;
-          
      }
+
+     /* Section home */
+      section .home-title .image-in-title{
+             width: 80px;
+            
+      }
+     .home-title .title-brand p{
+         text-align: left;
+     }
+
+     .home-title  .title-brand h1{
+         font-size: 2.5rem;
+     }
+
+     /* cards */
+     .cards  .cards-child  .image-cards{
+         width:   20vh;
+     }
+
+     .cards .cards-child .icon i{
+         font-size: 14px;
+     }
+
+     
+     /* response about cosmetics */
+     .About-cosmetics{
+         flex-direction: column;
+     }
+
+     .About-cosmetics .image-about{
+          width: 280px;
+     }
+     .About-cosmetics .title-about{
+       margin-top: 15px;
+     }
+
+     .About-cosmetics .title-about h1{
+        font-size: 2.04rem;
+     }
+
+     /* ssection products */
+     .products-links{
+      position: relative;
+       justify-content: space-between;
+       padding-right:20px;
+       padding-left: 20px;
+     }
+
+
+     .icon-product {
+        display: block;
+     }
+
+     .links{
+       /* display: none; */
+        position: absolute;
+        top: 25%;
+        left: -100%;
+        margin-top: 50px;
+        background-color: var(--color-2);
+        padding: 30px;
+        width: 25vh;
+       display: flex;
+       flex-direction: column;
+       transition: 0.3s ease;      
+       border-top-right-radius: 10px;
+       border-bottom-right-radius: 10px;
+     }
+     .active-link.links{
+        left: 0;
+     }
+
+     .links a{
+        color: var(--black);
+        text-align: center;
+     }
+
+     /* says clients */
+     .client-says h1{
+        font-size: 2rem;
+     }
+     /* section perfume */
+     .shop_div{
+      margin-top: -20px;
+     }
+     .shop_div h1{
+        font-size: 2.3rem;
+     }
+
+     /* section subscibe */
+     .subscribe_Now  .add-email input{
+          padding: 0.6rem 80px;
+     }
+
+     /* response footer */
+     .footer{
+       flex-direction: column;
+       text-align: center;
+     }
+
+
 
 }

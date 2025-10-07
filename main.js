@@ -3,23 +3,31 @@
 let menu=document.querySelector(".menu");
 let navBar=document.querySelector(".navbar");
 let header=document.querySelector("header");
+let links_product=document.querySelector(".links");
+let icon_product=document.querySelector(".icon-product");
 
 
 
+
+// Scroll header change background
 addEventListener("scroll",()=>{
      header.classList.toggle('shadow',window.scrollY > 0 );
 });
+ 
 
-
+// nav bar click
 menu.addEventListener("click",()=>{
    navBar.classList.toggle("Acitve-nav");
 
+})
 
+// links product to change 
+icon_product.addEventListener("click",()=>{
+     links_product.classList.toggle("active-link");
 })
 
 
-
-
+// icon plus to add product in 
 products_in_list=[
 
     {
