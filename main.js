@@ -32,44 +32,44 @@ products_in_list=[
 
     {
         img:"images/products/collection.png",
-        name:"collection",
-        price:"$19.00",
+        name:"The Classic Lip Essentials Kit",
+        price:"$75",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/Element Small.png",
-        name:"Element Small",
-        price:"$19.00",
+        name:"The Nude Essentials Eye Palette",
+        price:"$48",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/makeup.png",
-        name:"makeup",
-        price:"$19.00",
+        name:"The Petal Pink Beauty Box ",
+        price:"$160",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/makuep.png",
-        name:"Element Small",
-        price:"$19.00",
+        name:"The Essential Artist Makeup Kit",
+        price:"$250",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/Nail polish with.png",
-        name:"Nail polish with",
-        price:"$19.00",
+        name:"Cosmic Shimmer Trio",
+        price:"$40",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/Natural Lotion.png",
-        name:"Natural Lotion",
-        price:"$19.00",
+        name:"Pure Aloe Calming Essence",
+        price:"$18",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/Naturally Created FaceWash for.png",
-        name:"Naturally Created FaceWash for",
-        price:"$19.00",
+        name:"Citrus Glow Foaming Cleanser",
+        price:"$22",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
@@ -81,19 +81,19 @@ products_in_list=[
       {
         img:"images/products/Red LipsStick For Sell,buy.png",
         name:"Element Small",
-        price:"$19.00",
+        price:"	$35",
         add_product:' <i class="fa-solid fa-plus"></i>',
     }
     ,  {
         img:"images/products/image_5.png",
-        name:"Element Small",
-        price:"$19.00",
+        name:"Fire Red Lacquer",
+        price:"$12",
         add_product:' <i class="fa-solid fa-plus"></i>',
     },
       {
         img:"images/products/Shiny Red Nail Polish For woman.png",
-        name:"Shiny Red Nail Polish ",
-        price:"$19.00",
+        name:"Ruby Ink Nail Lacquer",
+        price:"$48",
         add_product:' <i class="fa-solid fa-plus"></i>',
     }
 ]
